@@ -1,6 +1,6 @@
-# Natter public release checklist
+# Natter release checklist
 
-Get the current public release from [GitHub Releases](https://github.com/daneleo35/Natter/releases/latest). Build commands below run from the build checkout. Official packages include SHA-256 checksums. GitHub’s automatic source archives contain the public downloads repository.
+Get the current release from [GitHub Releases](https://github.com/daneleo35/Natter/releases/latest). Build commands below run from the build checkout. Official packages include SHA-256 checksums. GitHub’s automatic source archives contain the public downloads repository.
 
 ## Windows client
 
@@ -59,4 +59,4 @@ Run this test once against the Windows server ZIP and again against the Linux se
 ## Publishing the next release
 
 - [ ] Choose the highest applicable semantic-version bump from the latest published version. Set the version in `package.json`, both version fields in `package-lock.json` and `desktop/release-notes.json`. Keep the installer, signed update manifest and deployed server image aligned. Follow `deploy/updates/README.md` in the build checkout for building and signing. Published versions and their assets are immutable.
-- [ ] Run the public build workflow and keep the CI evidence. Publish the tested platform assets and checksums with notes that explain changes and setup. Confirm the release API lists each final asset with its public download URL. Keep the website’s release snapshot current so the same links are available when live GitHub requests fail.
+- [ ] Run the packaging workflow and keep the CI evidence. Publish the tested platform assets and checksums with notes that explain changes and setup. Confirm the release API lists each final asset with its public download URL. Keep the website’s release snapshot current so the same links are available when live GitHub requests fail.
