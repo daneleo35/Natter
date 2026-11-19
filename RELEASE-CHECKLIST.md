@@ -11,10 +11,10 @@ Get the current public release from [GitHub Releases](https://github.com/daneleo
 
 ## Linux client
 
-- [ ] **Build command** — There is no Linux package command today. Add a native Linux x64 target and expose it as `npm run package:public:linux` after `npm ci`. Build the public renderer and Electron main/preload, configure an AppImage target, and gate Windows-only setup options, capture helpers and global hotkeys. Check safe-storage behaviour on the supported desktop and verify that the app works with typical Linux audio and screen-capture setups.
-- [ ] **Package and architecture** — Proposed AppImage, Linux x64. Confirm runtime requirements on supported desktops before documenting them.
-- [ ] **GitHub asset** — Proposed `Natter-Public-VERSION-linux-x64.AppImage` and matching SHA-256 file. Add the build to CI and verify the published filename agrees with the website matcher. The download page lists it as **Not yet available**.
-- [ ] **Clean-machine test** — Download on a clean Ubuntu 24.04 x64 desktop, mark the AppImage executable and launch it. Select audio devices, test the mic, join over HTTPS and verify two-way voice, text chat, playback and reconnect after restart. On Wayland, test selecting and sharing a window or display. Record which desktop features and capture backends pass before describing Linux support.
+- [x] **Build command** — Run `npm ci` and `npm run package:public:linux` on Linux x64. The public packaging workflow builds and tests the package on Ubuntu.
+- [x] **Package and architecture** — DEB for Ubuntu x64. Install with `sudo apt install ./Natter-VERSION-linux-x64.deb`.
+- [x] **GitHub asset** — `Natter-VERSION-linux-x64.deb` and its SHA-256 file.
+- [ ] **Physical desktop test** — On a clean Ubuntu x64 desktop, select a real mic and headset, verify voice both ways and test screen sharing under Wayland.
 
 ## Windows server
 
@@ -34,7 +34,7 @@ Get the current public release from [GitHub Releases](https://github.com/daneleo
 
 ## Two-client voice test
 
-Run this test once against the Windows server ZIP and again against the Linux server tar.gz. Use the published Windows installer and the Linux release-candidate AppImage on separate clean x64 desktops. Both runs are pending the Linux client build.
+Run this test once against the Windows server ZIP and again against the Linux server tar.gz. Use the published Windows installer and Ubuntu DEB.
 
 - [ ] Windows server + Windows client + Linux client.
 - [ ] Linux server + Windows client + Linux client.
