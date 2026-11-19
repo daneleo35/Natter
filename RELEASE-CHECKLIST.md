@@ -47,7 +47,7 @@ Run this test once against the Windows server ZIP and again against the Linux se
 - [x] Capture the Windows audio setup and Server browser with fictional data.
 - [x] Capture a fictional speaker and waveform selection in **Edit voice clip**, and the queue and volume controls in **Music and Video**.
 - [ ] Capture **Save to Soundboard** in the owner’s voice editor. Capture the saved sound and its **Play** button.
-- [ ] Supplement the join guide with the Linux AppImage’s first-launch audio choices and completed mic check once a build is available.
+- [ ] Supplement the join guide with the Ubuntu DEB’s first-launch audio choices and a completed mic check on a physical desktop.
 - [ ] Capture Windows and Linux server owner-claim dialogs and connected clients under the same demo server. Use a disposable owner code and crop it out entirely. On Linux also capture the service active after reboot, with hostnames and filesystem paths limited to the guide’s examples.
 - [x] Capture a live screen share of the Orbital Run demo window in Friday Crew.
 - [x] Capture the actual gameplay clip editor with a trimmed demo replay, named Ben and Riley voice tracks and **Save edited copy**.
