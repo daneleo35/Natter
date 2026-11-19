@@ -1,31 +1,146 @@
+<p align="center">
+  <img src="https://officialgamershub.com/Natter/assets/natter.png" alt="Natter logo" width="88">
+</p>
+
 # Natter
 
-Natter is a self-hosted voice and text chat app for groups. The desktop client is available for Windows and Ubuntu x64. Natter Server runs on Windows and Linux.
+**An all-in-one VoIP and chat app for gaming, friends and communities.**
 
-- **Connection limit.** A server starts with a limit of 200 simultaneous clients. The host can set it from 1 to 1,000, the software maximum. Individual channels have their own participant limits.
-- **Server storage.** The host stores server accounts, profiles, channels, permissions, chat history, the audit log and shared soundboard clips in PostgreSQL. Uploaded files and shared gameplay clips live in the server’s file directory.
-- **Voice encryption.** WebRTC DTLS-SRTP encrypts voice between each client and the server. The server terminates that encryption and can access the audio it routes.
+Talk in voice channels, keep conversations going in chat, share your screen, listen to music together and turn memorable moments into clips. Natter brings voice, text, media and recording tools into one desktop app, with a server you can host yourself.
 
-**Joining a friend?** Get the Windows installer or Ubuntu DEB from the [latest release](https://github.com/daneleo35/Natter/releases/latest), then follow [Join your first server](https://github.com/daneleo35/Natter/wiki/Join-your-first-server).
+**[Website](https://officialgamershub.com/Natter/)** · **[Downloads](https://officialgamershub.com/Natter/downloads/)** · **[Releases](https://github.com/daneleo35/Natter/releases)** · **[Full feature list](https://officialgamershub.com/Natter/features/)** · **[Wiki and guides](https://github.com/daneleo35/Natter/wiki)**
 
-**Hosting a community?** Follow [Host a Natter server on Linux](https://github.com/daneleo35/Natter/wiki/Host-a-Natter-server-on-Linux), [Host with Docker](https://github.com/daneleo35/Natter/wiki/Host-with-Docker), or [Host on Windows](https://github.com/daneleo35/Natter/wiki/Host-on-Windows). The guided setup asks for your server name, IPv4 address and ports. Natter can serve HTTPS directly, so friends enter your IP in **Browse servers** and confirm **Trust server** on first connection.
+![Natter's main workspace, with voice channels, members, tool tabs and a Quick chat conversation](https://officialgamershub.com/Natter/assets/friday-crew.png)
 
-## What you can do
+*The Natter workspace, shown with a sample community. Stay in voice while using chat, files, screen sharing and clips.*
 
-- **Voice and text channels.** Join a room to talk, use its chat, or start a thread or direct message where your group has access.
-- **Push-to-talk.** Choose **Hold to talk** and bind a shortcut. The shortcut works globally on Windows and while the Natter window is focused on Linux.
-- **Channel music.** Queue a supported link or media file for eligible listeners in your current channel, set your own volume, or watch a supported video together.
-- **Screen sharing.** Share a window or display so people in your channel can choose to watch it.
-- **Gameplay clipping.** Save the last 30 to 60 seconds of a buffered window or display, with optional mic and voice-chat tracks. Automatic game detection and system audio capture are Windows features.
-- **Per-person voice clipping.** Capture a section of channel voice, pick one speaker, and save the trimmed line as a WAV or publish it with soundboard upload permission. Members can opt their own voices out of individual recording on each server.
-- **Multitrack editing.** Trim a gameplay replay, adjust or mute individual tracks, and save a new copy or export a WebM with one mixed audio track.
-- **Shared soundboards.** Upload short clips and play them to eligible listeners in your channel. Hosts can require review and delegate clip moderation by group.
-- **Custom notification sounds.** Choose local files for events such as channel joins and leaves. Natter ships with no notification sounds.
-- **GIFs and stickers.** Add a featured GIF, paste a GIPHY link, or connect your own GIPHY key for catalogue search.
-- **Custom profiles.** Set a server display name, avatar, bio, banner, accent, badges and a timed status.
-- **Stream Deck controls.** Install the Windows plugin to toggle mic, deafen, soundboard and music and to trigger voice or gameplay captures.
-- **Community tools.** Create nested channels, assign groups and permissions, pin useful links and files, and share gameplay clips in the server gallery.
+## Get Natter
 
-To list a server in **Browse servers**, sign in as the owner, tick **Public server** under **Manage virtual server → Host**, and select **Apply**. The directory checks that your address is reachable over HTTPS before listing it. [Public listing setup](https://github.com/daneleo35/Natter/wiki/Manage-a-community#list-your-server-publicly)
+The [latest release](https://github.com/daneleo35/Natter/releases/latest) includes clients and standalone servers. Download links and release notes are also available on the [Natter website](https://officialgamershub.com/Natter/downloads/).
 
-[Natter Wiki](https://github.com/daneleo35/Natter/wiki) · [Natter website](https://officialgamershub.com/Natter/) · [Public release checklist](RELEASE-CHECKLIST.md)
+| Package | Platform | Format | Get started |
+| --- | --- | --- | --- |
+| Desktop client | Windows x64 | EXE installer | [Download](https://github.com/daneleo35/Natter/releases/latest) · [Join a server](https://github.com/daneleo35/Natter/wiki/Join-your-first-server) |
+| Desktop client | Ubuntu x64 | DEB package | [Download](https://github.com/daneleo35/Natter/releases/latest) · [Ubuntu instructions](https://officialgamershub.com/Natter/join/#ubuntu-shortcuts-and-saved-sessions) |
+| Standalone server | Windows x64 | ZIP archive | [Download](https://github.com/daneleo35/Natter/releases/latest) · [Windows hosting guide](https://github.com/daneleo35/Natter/wiki/Host-on-Windows) |
+| Standalone server | Linux x64 | tar.gz archive | [Download](https://github.com/daneleo35/Natter/releases/latest) · [Linux hosting guide](https://github.com/daneleo35/Natter/wiki/Host-a-Natter-server-on-Linux) |
+
+**Joining your friends?** Install the client, choose and test your microphone and headphones, then open **Browse servers**. Pick a listed community or enter the address your host gave you, choose your display name and join a voice channel.
+
+**Hosting your own community?** Use the [Windows](https://officialgamershub.com/Natter/host-windows/), [Linux](https://officialgamershub.com/Natter/host-linux/) or [Docker Compose](https://officialgamershub.com/Natter/host-docker/) guide. You can host on an IP address or a hostname. Direct-IP connections use HTTPS, with a server fingerprint to confirm on first connection.
+
+## Voice that fits your setup
+
+- **Voice channels and whispers.** Join a room, see who is speaking, or use a whisper shortcut for selected people or channels.
+- **Choose when you transmit.** Use voice activation, hold-to-talk, toggle-to-talk or continuous transmission. Adjust automatic sensitivity, a volume gate or hybrid activation.
+- **Tune your microphone.** Choose Standard WebRTC suppression, local DeepFilterNet3 AI noise removal, Speex or no suppression. Adjust typing attenuation, gain, echo cancellation and advanced processing when needed.
+- **Keep control of playback.** Mute your mic, deafen incoming audio, mute a member locally or adjust their individual volume. Voice, effects, music and shared audio have separate listening controls.
+- **Set up privately.** Test your microphone and headphones, calibrate room noise and save named audio setups. Private microphone tests pause channel transmission while you check your sound.
+
+Advanced capture settings include high-pass filtering, noise gating, compression, automatic gain and peak protection. Studio and bypass options are available for microphones processed elsewhere.
+
+<details>
+<summary>See the audio setup</summary>
+
+![Natter's guided microphone and audio setup](https://officialgamershub.com/Natter/assets/audio-setup.png)
+
+</details>
+
+## Chat, plans and shared files
+
+Use **server chat**, **channel chat** and **direct messages**, or give a subject its own named thread. Quick chat stays docked below the workspace and can be resized, collapsed or hidden.
+
+- Send text, paste screenshots, upload images and attach permitted files.
+- Browse emoji, featured GIFs and stickers, or paste a GIPHY link. Connect your own GIPHY API key for full catalogue search.
+- Create polls, pin useful links and files, and catch up using unread counts and remembered read positions.
+- Browse channel and server files, create folders, preview supported media and manage uploads and downloads with progress controls.
+- Keep general chat tidy: unthreaded server and channel messages expire after eight hours. Named threads remain until removed; direct-message retention is controlled separately by the host.
+
+## Share a screen, a game or something to watch
+
+Choose a window or display, check your local preview and let people in your voice channel open the share from your **Live** badge. Viewers can use Fit, Fill, fullscreen or a pop-out window.
+
+Quality presets include gameplay sharing up to **1080p60** and **4K60**, alongside Auto and lower-resolution choices. Actual resolution and frame rate depend on the capture source, hardware and connection. Windows display sharing can include system audio when the source and channel permissions allow it.
+
+![Watching a shared game window in Natter](https://officialgamershub.com/Natter/assets/screen-share.png)
+
+**Music and Video** adds a channel queue for supported YouTube and Twitch links and uploaded channel media. Set your own listening volume, use audio-only playback or open **Watch Together**. The session host can pause, seek and skip supported videos; viewers can vote to skip.
+
+Channel media playback needs the host's media tools configured. The [music guide](https://officialgamershub.com/Natter/channel-music/) covers permissions and FFmpeg, ffprobe and yt-dlp requirements.
+
+## Save gameplay and edit the tracks
+
+Keep a **30–60 second replay buffer** for a chosen window or display, then save the moment with **Save replay** or a shortcut. On Windows, automatic detection can start buffering supported games. Optional local laughter detection can trigger a clip after sustained laughter.
+
+Enable your microphone and Natter voice-chat recording to keep speakers on separate tracks, subject to their recording preferences.
+
+![Natter's gameplay editor with a video preview, In and Out handles, coloured speaker tracks and individual volume controls](https://officialgamershub.com/Natter/assets/gameplay-editor.png)
+
+The built-in gameplay editor lets you:
+
+- Drag the **In** and **Out** handles or enter exact times to choose what to keep.
+- Scrub the preview, zoom the timeline and loop the selected range.
+- Adjust or mute each named, coloured audio track independently.
+- Drag a track's volume line, or add volume points to turn down one loud moment.
+- Undo and redo volume edits, then save an edited copy while keeping the original.
+- Export a WebM with one mixed audio track, or upload a replay to your server's **Shared clips** gallery when permitted.
+
+[Gameplay recording and editing guide](https://officialgamershub.com/Natter/gameplay-clips/)
+
+## Turn a voice line into a soundboard clip
+
+Enable the voice clip recorder, choose your before-and-after capture time and capture a moment from your current channel. In the editor, pick the speaker you want to keep.
+
+![Natter's voice clip editor with speaker selection, waveform trimming, local preview and volume controls](https://officialgamershub.com/Natter/assets/voice-editor.png)
+
+Trim with drag selection or exact times, split at the playhead, remove a mistake and close the gap, or silence a section while preserving its timing. Adjust gain, volume points and fades, normalise the level, then preview locally. Undo, redo and reset keep editing reversible.
+
+Save a **WAV** to your device or publish to the server's soundboard when your role has upload permission. Add a name, category, tags and optional thumbnail. Personal soundboard pages and favourites help organise the clips you use most; **Preview** plays locally and **Play** sends a sound to eligible listeners in your current channel.
+
+Hosts can require approval for new sounds and delegate review, editing and deletion separately. Members can turn off **Allow voice recording** in their server profile to opt out of individual capture in current Natter clients. External recorders and system-audio capture can still pick up playback.
+
+[Voice clips and soundboard guide](https://officialgamershub.com/Natter/voice-clips/)
+
+## Make the space your own
+
+- **Profiles:** avatars, bios, uploaded or preset banners, accent colours, personal badges and automatically expiring statuses.
+- **Layouts:** reorder and pin tabs, choose what opens on launch and keep separate main-monitor and narrow side-monitor layouts.
+- **Appearance:** colour themes, readable status indicators and compact group and personal badges.
+- **Notifications:** choose your own local sounds, use quiet mode and configure muted-microphone warnings. Natter ships without bundled notification sounds.
+- **Local accounts:** optionally keep settings, bookmarks and saved credentials together, with encrypted account-backup export and import.
+
+## Windows desktop integrations
+
+Install the **Stream Deck plugin** from **Settings → Integrations** to add microphone, audio/deafen, soundboard and music toggles, plus voice-capture and gameplay-clip buttons. Keys show their current state. Elgato Stream Deck software 7.1 or later is required.
+
+With **Streamlabs Desktop** running locally, Natter can follow its recording state and save separate speaker WAVs beside the finished video recording. Enable it under **Settings → Recording**.
+
+Windows also supports global shortcuts, automatic game detection, system-audio capture and tray controls. On Ubuntu, shortcuts work while Natter is focused, and capture depends on the desktop's available screen-sharing support. The [join guide](https://github.com/daneleo35/Natter/wiki/Join-your-first-server) explains platform-specific setup and updates.
+
+## Run a community on your own server
+
+Create nested permanent or temporary channels, set default and away rooms, and customise names, topics, descriptions, icons and pictures. Use passwords, account or group access rules, participant limits and talk power to control each room.
+
+Custom ranked groups and individual overrides let you delegate voice, chat, file, soundboard, music and screen-sharing permissions. Moderation includes moving or muting members, channel and server kicks, timed bans, an audit log and server analytics.
+
+The server defaults to **200 simultaneous connections**, configurable from **1 to 1,000**. Rooms have separate participant limits, and reserved slots can be assigned by permission. Practical capacity depends on the host's hardware and bandwidth. File, soundboard and shared-clip storage limits are configurable too.
+
+To make a server discoverable, the owner can enable **Public server** under **Manage virtual server → Host**. The directory checks that its HTTPS address is reachable before listing it. Unlisted communities can still connect directly by address.
+
+[Community management](https://github.com/daneleo35/Natter/wiki/Manage-a-community) · [Hosting guides](https://officialgamershub.com/Natter/guides/#hosting)
+
+## Where data lives and how connections are protected
+
+The host stores server accounts, profiles, channels, permissions, chat history, soundboard uploads and metadata in **PostgreSQL**. Uploaded files and shared gameplay clips live in the server's file directory. Local settings, private edit drafts and unshared replays stay on your device until you save or share them.
+
+Remote sign-in, chat and connection setup use **HTTPS and secure WebSockets**. Voice, whispers and screen-sharing media use **WebRTC DTLS-SRTP between each client and the server**. The server terminates those encrypted connections and can access the media it routes; this is not end-to-end encryption.
+
+[Connections, storage and encryption](https://github.com/daneleo35/Natter/wiki/Connections-storage-and-encryption)
+
+## Explore, download and get help
+
+- **[Natter website](https://officialgamershub.com/Natter/):** screenshots, features, downloads and setup guides.
+- **[GitHub Releases](https://github.com/daneleo35/Natter/releases):** client and server packages, release notes and checksums.
+- **[Natter Wiki](https://github.com/daneleo35/Natter/wiki):** joining, hosting, recording, permissions and community management.
+- **[Report a bug or request a feature](https://github.com/daneleo35/Natter/issues):** include your Natter version, operating system and steps to reproduce a problem. Keep recovery keys, passwords and private server details out of public reports.
+- **[Public release checklist](RELEASE-CHECKLIST.md):** platform packaging and release checks.
