@@ -4,7 +4,7 @@ Get the current public release from [GitHub Releases](https://github.com/daneleo
 
 ## Windows client
 
-- [x] **Build command** — On Windows x64 with Node.js 24 LTS, .NET 10 SDK, Windows SDK and Visual Studio C++ build tools, run `npm ci` and `npm run package:public:win`. The **Build Natter Public packages** workflow builds the native hotkey helper and the desktop installer.
+- [x] **Build command** — On Windows x64 with Node.js 24 LTS, .NET 10 SDK, Windows SDK and Visual Studio C++ build tools, run `npm ci` and `npm run package:public:win`. The **Build public Natter packages** workflow builds the native hotkey helper and the desktop installer.
 - [x] **Package and architecture** — NSIS EXE installer, Windows x64.
 - [x] **GitHub asset** — `Natter-Setup-VERSION-win-x64.exe`, its SHA-256 file and the signed public update manifest.
 - [ ] **Clean-machine test** — On a clean Windows 11 x64 VM with a mic and headphones, install as a standard user, launch from Start, complete audio setup and connect over HTTPS. Send a chat message, check voice both ways, try a screen share, save and edit a replay, then verify Settings and saved servers survive a restart. For release candidates with an enabled update feed, check the signed update from the previous public installer.
@@ -46,19 +46,17 @@ Run this test once against the Windows server ZIP and again against the Linux se
 - [x] Capture the current Windows client with the Friday Crew demo server, a populated channel tree, users in voice and sample Quick chat.
 - [x] Capture the Windows audio setup and Server browser with fictional data.
 - [x] Capture a fictional speaker and waveform selection in **Edit voice clip**, and the queue and volume controls in **Music and Video**.
-- [ ] Capture **Save to Soundboard** in the owner’s voice editor. Capture the saved sound and its **Play** button.
+- [ ] Capture **Save to Soundboard** in the voice editor of an account with upload permission. Capture the saved sound and its **Play** button.
 - [ ] Supplement the join guide with the Ubuntu DEB’s first-launch audio choices and a completed mic check on a physical desktop.
 - [ ] Capture Windows and Linux server owner-claim dialogs and connected clients under the same demo server. Use a disposable owner code and crop it out entirely. On Linux also capture the service active after reboot, with hostnames and filesystem paths limited to the guide’s examples.
 - [x] Capture a live screen share of the Orbital Run demo window in Friday Crew.
 - [x] Capture the actual gameplay clip editor with a trimmed demo replay, named Ben and Riley voice tracks and **Save edited copy**.
 - [ ] Capture **Music and Video → Now playing** with a redistributable sample track queued and playing, then show the same channel’s live share while playback continues.
-- [ ] Have a first-time joiner and a first-time host follow the public guides using the release packages only. Cover Windows and Linux as each target becomes available. Capture the exact step and wording for any point where they need help.
-- [x] Retrieve all three v2.1.1 packages from the GitHub asset URLs and match their full lengths and published SHA-256 files.
-- [x] On the public site, click all three v2.1.1 download buttons and confirm they return the same verified packages. Check the Linux client row displays **Not yet available**.
-- [ ] After each release or site change, click every live download on the public site. Check the filename, package type, architecture and SHA-256 against GitHub. Check each release-notes link and the older-versions link. Verify unavailable rows have no download action.
+- [ ] Have a first-time joiner and a first-time host follow the public guides using the release packages only. Cover the Windows installer and Ubuntu DEB. Capture the exact step and wording for any point where they need help.
+- [ ] After each release or site change, click every live download on the public site. Check the filename, package type, architecture and SHA-256 against GitHub. Check that the release-notes links point to the current release.
 - [x] Verify the website and Wiki guide links in both directions without signing in.
 
 ## Publishing the next release
 
-- [ ] Choose the highest applicable semantic-version bump from the latest published version. Linux client support is a new feature, so it calls for at least a minor bump. Set the version in `package.json`, both version fields in `package-lock.json` and `desktop/release-notes.json`. Keep the installer, signed update manifest and deployed server image aligned. Follow `deploy/updates/README.md` in the build checkout for building and signing. Published versions and their assets are immutable.
+- [ ] Choose the highest applicable semantic-version bump from the latest published version. Set the version in `package.json`, both version fields in `package-lock.json` and `desktop/release-notes.json`. Keep the installer, signed update manifest and deployed server image aligned. Follow `deploy/updates/README.md` in the build checkout for building and signing. Published versions and their assets are immutable.
 - [ ] Run the public build workflow and keep the CI evidence. Publish the tested platform assets and checksums with notes that explain changes and setup. Confirm the release API lists each final asset with its public download URL. Keep the website’s release snapshot current so the same links are available when live GitHub requests fail.
