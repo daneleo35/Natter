@@ -1,7 +1,7 @@
 # Natter
 Natter is a self-hosted voice and chat app built for friends who game together. Clear audio, screen sharing, soundboards, gameplay clips, multitrack editing, GIFs, custom profiles and Stream Deck controls. Keep your community connected, share the laughs and capture your best gaming moments with a private server you fully control.
 
-## Download Natter Public
+## Download Natter
 
 Open the [latest release](https://github.com/daneleo35/Natter/releases/latest) for the Windows x64 client installer and the Windows x64 and Linux x64 server archives.
 
