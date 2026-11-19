@@ -1,12 +1,12 @@
 # Natter public release checklist
 
-Current public release is [v2.1.1](https://github.com/daneleo35/Natter/releases/tag/v2.1.1). Build commands below run from the build checkout. Public packages and checksums are published in [GitHub Releases](https://github.com/daneleo35/Natter/releases). GitHub’s automatic source archives contain the public downloads repository.
+Get the current public release from [GitHub Releases](https://github.com/daneleo35/Natter/releases/latest). Build commands below run from the build checkout. Official packages include SHA-256 checksums. GitHub’s automatic source archives contain the public downloads repository.
 
 ## Windows client
 
 - [x] **Build command** — On Windows x64 with Node.js 24 LTS, .NET 10 SDK, Windows SDK and Visual Studio C++ build tools, run `npm ci` and `npm run package:public:win`. The **Build Natter Public packages** workflow builds the native hotkey helper and the desktop installer.
 - [x] **Package and architecture** — NSIS EXE installer, Windows x64.
-- [x] **GitHub asset** — [Natter-Setup-2.1.1-win-x64.exe](https://github.com/daneleo35/Natter/releases/download/v2.1.1/Natter-Setup-2.1.1-win-x64.exe). For future versions use `Natter-Setup-VERSION-win-x64.exe`, its SHA-256 file and the signed public update manifest.
+- [x] **GitHub asset** — `Natter-Setup-VERSION-win-x64.exe`, its SHA-256 file and the signed public update manifest.
 - [ ] **Clean-machine test** — On a clean Windows 11 x64 VM with a mic and headphones, install as a standard user, launch from Start, complete audio setup and connect over HTTPS. Send a chat message, check voice both ways, try a screen share, save and edit a replay, then verify Settings and saved servers survive a restart. For release candidates with an enabled update feed, check the signed update from the previous public installer.
 
 ## Linux client
@@ -20,14 +20,14 @@ Current public release is [v2.1.1](https://github.com/daneleo35/Natter/releases/
 
 - [x] **Build command** — On Windows x64 with Node.js 24 LTS, run `npm ci` and `npm run package:public:server`. The public package includes the Windows mediasoup worker.
 - [x] **Package and architecture** — ZIP archive, Windows x64. Running it requires Node.js 24.14 or later and PostgreSQL.
-- [x] **GitHub asset** — [Natter-Server-2.1.1-win-x64.zip](https://github.com/daneleo35/Natter/releases/download/v2.1.1/Natter-Server-2.1.1-win-x64.zip), plus its SHA-256 file.
+- [x] **GitHub asset** — `Natter-Server-VERSION-win-x64.zip` and its SHA-256 file.
 - [ ] **Clean-machine test** — Use a fresh Windows x64 host with only the documented prerequisites. Extract the actual download, create the database and `.env`, run `start-server.cmd`, check `/health` and claim ownership. From another machine, connect over HTTPS and confirm text and live media across the firewall. Restart the process and verify that the owner, a channel, a message and a shared sound persist.
 
 ## Linux server
 
 - [x] **Build command** — On Linux x64 with Node.js 24 LTS, run `ELECTRON_SKIP_BINARY_DOWNLOAD=1 npm ci` and `npm run package:public:server`. The Linux workflow includes an automated PostgreSQL-backed server smoke test.
 - [x] **Package and architecture** — tar.gz archive, Linux x64. Running it requires Node.js 24.14 or later and PostgreSQL.
-- [x] **GitHub asset** — [Natter-Server-2.1.1-linux-x64.tar.gz](https://github.com/daneleo35/Natter/releases/download/v2.1.1/Natter-Server-2.1.1-linux-x64.tar.gz), plus its SHA-256 file.
+- [x] **GitHub asset** — `Natter-Server-VERSION-linux-x64.tar.gz` and its SHA-256 file.
 - [ ] **Clean-machine test** — On a fresh Ubuntu 24.04 x64 host, use the published Linux guide to extract the real archive, set up PostgreSQL and HTTPS, claim ownership and connect two clients. Reboot and check systemd and journal output. Take a backup, restore it to a separate test instance, and check that accounts, messages and uploads survive an update.
 - [x] Validate the [Docker Compose configuration](https://officialgamershub.com/Natter/host-docker/) and its released x64 server archive.
 - [ ] On a clean Linux Docker host, start the stack, claim ownership over HTTPS and verify voice from a second client. Restart Docker and check persisted chat and uploads. Back up and update the stack using the Docker guide.

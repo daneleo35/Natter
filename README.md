@@ -25,6 +25,6 @@ Natter is a self-hosted voice and text chat app for groups. It includes a Window
 - **Stream Deck controls.** Install the Windows plugin to toggle mic, deafen, soundboard and music and to trigger voice or gameplay captures.
 - **Community tools.** Create nested channels, assign groups and permissions, pin useful links and files, and share gameplay clips in the server gallery.
 
-[Read the Natter Wiki](https://github.com/daneleo35/Natter/wiki) for the guides and configurable limits. To list a server in the browser, submit its HTTPS base address in [`servers.json`](https://github.com/daneleo35/Natter/blob/main/servers.json) with the server operator’s permission.
+[Read the Natter Wiki](https://github.com/daneleo35/Natter/wiki) for the guides and configurable limits. To list your community in **Browse servers**, sign in as the owner and tick **Public server** under **Manage virtual server → Host**. [Public listing setup](https://github.com/daneleo35/Natter/wiki/Manage-a-community#list-your-server-publicly)
 
 [Natter website](https://officialgamershub.com/Natter/) · [Public release checklist](RELEASE-CHECKLIST.md)
