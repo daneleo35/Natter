@@ -143,4 +143,4 @@ Remote sign-in, chat and connection setup use **HTTPS and secure WebSockets**. V
 - **[GitHub Releases](https://github.com/daneleo35/Natter/releases):** client and server packages, release notes and checksums.
 - **[Natter Wiki](https://github.com/daneleo35/Natter/wiki):** joining, hosting, recording, permissions and community management.
 - **[Report a bug or request a feature](https://github.com/daneleo35/Natter/issues):** include your Natter version, operating system and steps to reproduce a problem. Keep recovery keys, passwords and private server details out of public reports.
-- **[Public release checklist](RELEASE-CHECKLIST.md):** platform packaging and release checks.
+- **[Release checklist](RELEASE-CHECKLIST.md):** platform packaging and release checks.
