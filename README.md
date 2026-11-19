@@ -8,7 +8,7 @@ Natter is a self-hosted voice and text chat app for groups. It includes a Window
 
 **Joining a friend?** Get the Windows client from the [latest release](https://github.com/daneleo35/Natter/releases/latest), then follow [Join your first server](https://github.com/daneleo35/Natter/wiki/Join-your-first-server).
 
-**Hosting a community?** Follow [Host a Natter server on Linux](https://github.com/daneleo35/Natter/wiki/Host-a-Natter-server-on-Linux). The release also includes a Windows server archive with setup instructions.
+**Hosting a community?** Natter can serve HTTPS directly on a LAN or public IP, so members can enter the IP in **Browse servers**. Follow [Host a Natter server on Linux](https://github.com/daneleo35/Natter/wiki/Host-a-Natter-server-on-Linux) or [Host on Windows](https://github.com/daneleo35/Natter/wiki/Host-on-Windows).
 
 ## What you can do
 
