@@ -8,3 +8,9 @@ Open the [latest release](https://github.com/daneleo35/Natter/releases/latest) f
 In the client, open **Browse servers** to choose a listing, open a saved server, or connect by address. To host your own server, extract the archive for your platform and follow its setup instructions. Set `HUB_NAME` in `.env` to choose the display name. Join a voice channel and select **Soundboard → Add sound** to upload your own audio clips.
 
 To list a community server in the browser, submit its HTTPS base address in `servers.json`. List a server only with its operator's permission.
+
+## Website and release plan
+
+- [Natter website](https://officialgamershub.com/Natter/)
+- [Setup guides on GitHub Wiki](https://github.com/daneleo35/Natter/wiki)
+- [Public release checklist](RELEASE-CHECKLIST.md)
