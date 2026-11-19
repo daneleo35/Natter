@@ -4,14 +4,14 @@ Get the current release from [GitHub Releases](https://github.com/daneleo35/Natt
 
 ## Windows client
 
-- [x] **Build command** — On Windows x64 with Node.js 24 LTS, .NET 10 SDK, Windows SDK and Visual Studio C++ build tools, run `npm ci` and `npm run package:public:win`. The **Build public Natter packages** workflow builds the native hotkey helper and the desktop installer.
+- [x] **Build command** — On Windows x64 with Node.js 24 LTS, .NET 10 SDK, Windows SDK and Visual Studio C++ build tools, run `npm ci` and `npm run package:public:win`. The packaging workflow builds the native hotkey helper and the desktop installer.
 - [x] **Package and architecture** — NSIS EXE installer, Windows x64.
 - [x] **GitHub asset** — `Natter-Setup-VERSION-win-x64.exe`, its SHA-256 file and the signed public update manifest.
 - [ ] **Clean-machine test** — On a clean Windows 11 x64 VM with a mic and headphones, install as a standard user, launch from Start, complete audio setup and connect over HTTPS. Send a chat message, check voice both ways, try a screen share, save and edit a replay, then verify Settings and saved servers survive a restart. For release candidates with an enabled update feed, check the signed update from the previous public installer.
 
 ## Linux client
 
-- [x] **Build command** — Run `npm ci` and `npm run package:public:linux` on Linux x64. The public packaging workflow builds and tests the package on Ubuntu.
+- [x] **Build command** — Run `npm ci` and `npm run package:public:linux` on Linux x64. The packaging workflow builds and tests the package on Ubuntu.
 - [x] **Package and architecture** — DEB for Ubuntu x64. Install with `sudo apt install ./Natter-VERSION-linux-x64.deb`.
 - [x] **GitHub asset** — `Natter-VERSION-linux-x64.deb` and its SHA-256 file.
 - [ ] **Physical desktop test** — On a clean Ubuntu x64 desktop, select a real mic and headset, verify voice both ways and test screen sharing under Wayland.
