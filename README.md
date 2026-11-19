@@ -17,9 +17,9 @@ Natter is a self-hosted voice and text chat app for groups. It includes a Window
 - **Channel music.** Queue a supported link or media file for eligible listeners in your current channel and set your own playback volume.
 - **Screen sharing.** Share a window or display so people in your channel can choose to watch it.
 - **Gameplay clipping.** Save the last 30 to 60 seconds of a buffered window or display, with optional mic and voice-chat tracks.
-- **Per-person voice clipping.** Capture a section of channel voice, pick one speaker, and save the trimmed line as a WAV. The server owner can also save it directly to the soundboard with the required access.
+- **Per-person voice clipping.** Capture a section of channel voice, pick one speaker, and save the trimmed line as a WAV or publish it with soundboard upload permission. Members can opt their own voices out of individual recording on each server.
 - **Multitrack editing.** Trim a gameplay replay, adjust or mute individual tracks, and save a new copy or export a WebM with one mixed audio track.
-- **Shared soundboards.** Upload your own short audio clips and play them to eligible listeners in your channel.
+- **Shared soundboards.** Upload short clips and play them to eligible listeners in your channel. Hosts can require review and delegate clip moderation by group.
 - **GIFs and stickers.** Add a featured GIF, paste a GIPHY link, or connect your own GIPHY key for catalogue search.
 - **Custom profiles.** Set a server display name, avatar, bio, banner, accent, badges and a timed status.
 - **Stream Deck controls.** Install the Windows plugin to toggle mic, deafen, soundboard and music and to trigger voice or gameplay captures.
