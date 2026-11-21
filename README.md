@@ -29,6 +29,8 @@ The [latest release](https://github.com/daneleo35/Natter/releases/latest) includ
 
 **Hosting your own community?** Use the [Windows](https://officialgamershub.com/Natter/host-windows/), [Linux](https://officialgamershub.com/Natter/host-linux/) or [Docker Compose](https://officialgamershub.com/Natter/host-docker/) guide. You can host on an IP address or a hostname. Direct-IP connections use HTTPS, with a server fingerprint to confirm on first connection.
 
+**Using or building plugins?** In **Settings → Plugins**, choose **Import .natter plugin**, review its permissions, then install and enable it. The API 1 SDK includes the developer handbook, editable projects and compiled examples. [Download the SDK](https://github.com/daneleo35/Natter/releases/latest/download/Natter-Developer-SDK-API-1.zip) · [SHA-256](https://github.com/daneleo35/Natter/releases/latest/download/Natter-Developer-SDK-API-1.zip.sha256) · [Plugin guide](https://github.com/daneleo35/Natter/wiki/Install-and-build-plugins)
+
 ## Voice that fits your setup
 
 - **Voice channels and whispers.** Join a room, see who is speaking, or use a whisper shortcut for selected people or channels.
@@ -113,8 +115,6 @@ Hosts can require approval for new sounds and delegate review, editing and delet
 
 Install the **Stream Deck plugin** from **Settings → Integrations** to add microphone, audio/deafen, soundboard and music toggles, plus voice-capture and gameplay-clip buttons. Keys show their current state. Elgato Stream Deck software 7.1 or later is required.
 
-With **Streamlabs Desktop** running locally, Natter can follow its recording state and save separate speaker WAVs beside the finished video recording. Enable it under **Settings → Recording**.
-
 Windows also supports global shortcuts, automatic game detection, system-audio capture and tray controls. On Ubuntu, shortcuts work while Natter is focused, and capture depends on the desktop's available screen-sharing support. The [join guide](https://github.com/daneleo35/Natter/wiki/Join-your-first-server) explains platform-specific setup and updates.
 
 ## Run a community on your own server
@@ -126,6 +126,8 @@ Custom ranked groups and individual overrides let you delegate voice, chat, file
 The server defaults to **200 simultaneous connections**, configurable from **1 to 1,000**. Rooms have separate participant limits, and reserved slots can be assigned by permission. Practical capacity depends on the host's hardware and bandwidth. File, soundboard and shared-clip storage limits are configurable too.
 
 To make a server discoverable, the owner can enable **Public server** under **Manage virtual server → Host**. The directory checks that its HTTPS address is reachable before listing it. Unlisted communities can still connect directly by address.
+
+On a guided host, the server owner can check for signed updates under **Manage virtual server → Host → Server updates**, then restart immediately or wait until everyone leaves. Hosts running 2.4 need one manual upgrade before using these controls. [Update a Natter server](https://github.com/daneleo35/Natter/wiki/Update-a-Natter-server)
 
 [Community management](https://github.com/daneleo35/Natter/wiki/Manage-a-community) · [Hosting guides](https://officialgamershub.com/Natter/guides/#hosting)
 
