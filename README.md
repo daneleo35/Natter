@@ -52,6 +52,8 @@ Advanced capture settings include high-pass filtering, noise gating, compression
 
 Use **server chat**, **channel chat** and **direct messages**, or give a subject its own named thread. Quick chat stays docked below the workspace and can be resized, collapsed or hidden.
 
+In a thread, choose which users or groups can read and which can reply. Type `@` and pick a person or group to highlight a message for them. [Set up thread access and mentions](https://github.com/daneleo35/Natter/wiki/Manage-a-community#choose-who-can-read-and-reply-to-a-thread)
+
 - Send text, paste screenshots, upload images and attach permitted files.
 - Browse emoji, featured GIFs and stickers, or paste a GIPHY link. Connect your own GIPHY API key for full catalogue search.
 - Create polls, pin useful links and files, and catch up using unread counts and remembered read positions.
