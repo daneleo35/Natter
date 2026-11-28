@@ -1,0 +1,12 @@
+--- a/website/developer/build.mjs
++++ b/website/developer/build.mjs
+@@ -188,6 +188,9 @@
+ }
+ 
+ const argsExamples={
++  user:['var','selectedUser'],permission:'channel.name',
++  revision:['get',['get',['var','listed'],'value'],'revision'],
++  changes:['var','reviewedChangesJson'],
+   deaf:true,folder:'',search:'',placement:'inside',anchor:null,sound:['get',['var','selection'],'value'],
+   track:['get',['var','track'],'id'],video:false,url:'https://www.youtube.com/watch?v=jNQXAC9IVRw',
+   command:'skip',pin:['get',['var','pin'],'id'],kind:'file',
