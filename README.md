@@ -31,7 +31,7 @@ The [latest release](https://github.com/daneleo35/Natter/releases/latest) includ
 
 **Using or building plugins?** In **Settings → Plugins**, choose **Import .natter plugin**, review its permissions, then install and enable it. The API 1 SDK includes the developer handbook, editable projects and compiled examples. [Download the SDK](https://github.com/daneleo35/Natter/releases/latest/download/Natter-Developer-SDK-API-1.zip) · [SHA-256](https://github.com/daneleo35/Natter/releases/latest/download/Natter-Developer-SDK-API-1.zip.sha256) · [Plugin guide](https://github.com/daneleo35/Natter/wiki/Install-and-build-plugins)
 
-The 3.2.0 administration revision adds a working example that asks the server whether a member can rename a room. Find the script in the SDK under `plugin-sdk/inspect-channel.mjs`. [Integration guide](https://github.com/daneleo35/Natter/wiki/Channel-permissions-API) · [Handbook build inputs](https://github.com/daneleo35/Natter/tree/revision/v3.2.0/5de3cb6f0839/handbook-revision)
+The 3.2.0 administration revision adds a working example that asks the server whether a member can rename a room. Find the script in the SDK under `plugin-sdk/inspect-channel.mjs`. [Integration guide](https://github.com/daneleo35/Natter/wiki/Channel-permissions-API) · [Handbook build inputs](https://github.com/daneleo35/Natter/tree/revision/v3.2.0/c25f7c531756/handbook-revision)
 
 ## Voice that fits your setup
 
