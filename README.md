@@ -123,7 +123,7 @@ Windows also supports global shortcuts, automatic game detection, system-audio c
 
 Create nested permanent or temporary channels, set default and away rooms, and customise names, topics, descriptions, icons and pictures. Use passwords, account or group access rules, participant limits and talk power to control each room.
 
-Give a guest or group access to a single room without sharing its password or lowering its join power. [Set up room access grants](https://github.com/daneleo35/Natter/wiki/Manage-a-community#give-a-person-or-group-access-to-one-room)
+Give a guest access to one room, or let several people manage a branch of channels. Choose the actions they can take, inspect a member’s effective permissions, then review and apply your changes together. [Channel administration guide](https://github.com/daneleo35/Natter/wiki/Channel-administration)
 
 Custom ranked groups and individual overrides let you delegate voice, chat, file, soundboard, music and screen-sharing permissions. Moderation includes moving or muting members, channel and server kicks, timed bans, an audit log and server analytics.
 
