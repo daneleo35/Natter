@@ -123,6 +123,8 @@ Windows also supports global shortcuts, automatic game detection, system-audio c
 
 Create nested permanent or temporary channels, set default and away rooms, and customise names, topics, descriptions, icons and pictures. Use passwords, account or group access rules, participant limits and talk power to control each room.
 
+Give a guest or group access to a single room without sharing its password or lowering its join power. [Set up room access grants](https://github.com/daneleo35/Natter/wiki/Manage-a-community#give-a-person-or-group-access-to-one-room)
+
 Custom ranked groups and individual overrides let you delegate voice, chat, file, soundboard, music and screen-sharing permissions. Moderation includes moving or muting members, channel and server kicks, timed bans, an audit log and server analytics.
 
 The server defaults to **200 simultaneous connections**, configurable from **1 to 1,000**. Rooms have separate participant limits, and reserved slots can be assigned by permission. Practical capacity depends on the host's hardware and bandwidth. File, soundboard and shared-clip storage limits are configurable too.
